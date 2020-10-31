@@ -2,7 +2,9 @@ const Discord = require("discord.js");
 const config = require("./config.json");
 const client = new Discord.Client();
 
-client.login(config.BOT_TOKEN);
+const { PORT, DISCORD_TOKEN, PROJECT_DOMAIN } = process.env //del otro
+
+client.login(DISCORD_TOKEN);
 
 const prefix = "/";
 var aleatorio;
@@ -12,6 +14,10 @@ var dice = 100;
 var rollon = 0;
 var empate = 0;
 var seg = 20;
+
+client.on('ready', () => {
+  console.log('estoy listo!');
+});
 
 client.on("message", function(message) {
   if (message.author.bot) return;
@@ -92,3 +98,26 @@ function esEntero(x){
 		return false;
 	return x == y && x.toString() == y.toString();
 }
+
+
+// Web server
+const http = require('http');
+const express = require('express');
+const app = express();
+
+//
+app.use(express.static('public'));
+
+app.get("/", function (request, response) {
+  response.sendFile(__dirname + '/views/index.html');
+});
+
+app.get("/", (request, response) => {
+  response.sendStatus(200);
+});
+
+app.listen(process.env.PORT);
+
+setInterval(() => {
+  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`); 
+}, 280000);
