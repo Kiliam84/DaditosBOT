@@ -2,7 +2,7 @@
   "name": "daditos",
   "version": "1.0.0",
   "description": "bot de dados",
-  "main": "node index.js",
+  "main": "index.js",
   "dependencies": {
     "abort-controller": "^3.0.0",
     "asynckit": "^0.4.0",
