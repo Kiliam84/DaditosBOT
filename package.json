@@ -2,13 +2,14 @@
   "name": "daditos",
   "version": "1.0.0",
   "description": "bot de dados",
-  "main": "index.js",
+  "main": "node index.js",
   "dependencies": {
     "abort-controller": "^3.0.0",
     "asynckit": "^0.4.0",
     "combined-stream": "^1.0.8",
     "delayed-stream": "^1.0.0",
     "discord.js": "^12.4.1",
+    "express.js": "^1.0.0",
     "event-target-shim": "^5.0.1",
     "mime-db": "^1.44.0",
     "mime-types": "^2.1.27",
@@ -19,7 +20,8 @@
     "ws": "^7.3.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "Killiam84",
   "license": "ISC"
