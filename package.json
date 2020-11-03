@@ -2,7 +2,7 @@
   "name": "daditos",
   "version": "1.0.0",
   "description": "bot de dados",
-  "main": "index.js",
+  "main": "node index.js",
   "dependencies": {
     "abort-controller": "^3.0.0",
     "asynckit": "^0.4.0",
@@ -20,6 +20,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "Killiam84",
   "license": "ISC"
