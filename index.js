@@ -1,10 +1,9 @@
 const Discord = require("discord.js");
 const config = require("./config.json");
 const client = new Discord.Client();
+const config = require("./config.json");
 
-const { PORT, DISCORD_TOKEN, PROJECT_DOMAIN } = process.env //del otro
-
-client.login(DISCORD_TOKEN);
+client.login(config.BOT_TOKEN);
 
 const prefix = "/";
 var aleatorio;
