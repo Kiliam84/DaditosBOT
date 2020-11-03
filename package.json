@@ -1,11 +1,8 @@
 {
   "name": "daditos",
   "version": "1.0.0",
-  "engines": {
-    "node": "12.x"
-  },
   "description": "bot de dados",
-  "main": "node index.js",
+  "main": "index.js",
   "dependencies": {
     "abort-controller": "^3.0.0",
     "asynckit": "^0.4.0",
@@ -19,18 +16,10 @@
     "prism-media": "^1.2.2",
     "setimmediate": "^1.0.5",
     "tweetnacl": "^1.0.3",
-    "ws": "^7.3.1",
-    "express": "^4.16.3",
-    "eris": "^0.8.5",
-    "apiai": "^4.0.3",
-    "request": "^2.85.0",
-    "babel-register": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "node-cache": "^4.2.0"
+    "ws": "^7.3.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Killiam84",
   "license": "ISC"
