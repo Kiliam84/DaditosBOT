@@ -13,6 +13,7 @@
     "mime-db": "^1.44.0",
     "mime-types": "^2.1.27",
     "node-fetch": "^2.6.1",
+    "express.js": "^1.0.0",
     "prism-media": "^1.2.2",
     "setimmediate": "^1.0.5",
     "tweetnacl": "^1.0.3",
