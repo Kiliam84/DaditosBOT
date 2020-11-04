@@ -15,7 +15,7 @@ var empate = 0;
 var seg = 20;
 
 client.on('ready', () => {
-  console.log('estoy listo!');
+  console.log('Ready to roll!! :D');
 });
 
 client.on("message", function(message) {
