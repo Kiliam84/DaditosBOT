@@ -9,5 +9,5 @@ app.get('/', (req, res) => {
 // Listen to the App Engine-specified port, or 8080 otherwise
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
-  console.log(`Pagina en linea! Port: ${PORT}...`);
+  console.log(`Web-server en linea! Port: ${PORT}...`);
 });
