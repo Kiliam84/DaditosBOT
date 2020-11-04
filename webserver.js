@@ -1,4 +1,4 @@
-// Web server
+// Web server/*
 const http = require('http');
 const express = require('express');
 const app = express();
@@ -19,3 +19,4 @@ app.listen(process.env.PORT);
 setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.herokuapp.com/`);
 }, 280000);
+*/
