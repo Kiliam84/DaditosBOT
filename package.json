@@ -20,7 +20,7 @@
     "ws": "^7.3.1"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "author": "Killiam84",
   "license": "ISC"
