@@ -27,7 +27,7 @@ client.on("message", function(message) {
   
   
 	if (command === "dados") {
-		dice = commandBody;
+		dice = args[0];
 		if(esEntero(dice) == false){
 			dice = 100;
 		}
